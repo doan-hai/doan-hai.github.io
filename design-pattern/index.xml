@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Design-patterns on Home</title>
+    <link>https://doan-hai.github.io/design-pattern/</link>
+    <description>Recent content in Design-patterns on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Mar 2023 23:48:05 +0700</lastBuildDate><atom:link href="https://doan-hai.github.io/design-pattern/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Luyện tập Design Pattern: Hệ Thống Báo Cáo</title>
+      <link>https://doan-hai.github.io/design-pattern/design-pattern-practice-report-system/</link>
+      <pubDate>Thu, 23 Mar 2023 23:48:05 +0700</pubDate>
+      
+      <guid>https://doan-hai.github.io/design-pattern/design-pattern-practice-report-system/</guid>
+      <description>Một công ty cần một hệ thống báo cáo có thể tạo các loại báo cáo khác nhau như báo cáo tài chính, báo cáo nhân sự và báo cáo bán hàng. Mỗi loại báo cáo có cách tổng hợp dữ liệu khác nhau nhưng phải tuân theo một quy trình chuẩn.</description>
+    </item>
+    
+    <item>
+      <title>Luyện tập Design Pattern: Hệ Thống Cấu Hình Câu Hỏi Trắc Nghiệm</title>
+      <link>https://doan-hai.github.io/design-pattern/design-pattern-practice-multiple-choice-question-config-system/</link>
+      <pubDate>Thu, 23 Mar 2023 23:48:05 +0700</pubDate>
+      
+      <guid>https://doan-hai.github.io/design-pattern/design-pattern-practice-multiple-choice-question-config-system/</guid>
+      <description>Bạn cần thiết kế một hệ thống quản lý câu hỏi trắc nghiệm cho một nền tảng học trực tuyến. Hệ thống cần hỗ trợ nhiều loại câu hỏi như: câu hỏi một lựa chọn, câu hỏi nhiều lựa chọn, câu hỏi điền vào chỗ trống.</description>
+    </item>
+    
+    <item>
+      <title>Luyện tập Design Pattern: Hệ Thống Đặt Vé Máy Bay</title>
+      <link>https://doan-hai.github.io/design-pattern/design-pattern-practice-flight-booking-system/</link>
+      <pubDate>Thu, 23 Mar 2023 23:48:05 +0700</pubDate>
+      
+      <guid>https://doan-hai.github.io/design-pattern/design-pattern-practice-flight-booking-system/</guid>
+      <description>Bạn cần thiết kế một hệ thống đặt vé máy bay trực tuyến. Hệ thống cần hỗ trợ nhiều hãng hàng không khác nhau với các chính sách giá vé và điều kiện khác nhau.</description>
+    </item>
+    
+    <item>
+      <title>Luyện tập Design Pattern: Hệ Thống Gợi Ý Sản Phẩm</title>
+      <link>https://doan-hai.github.io/design-pattern/design-pattern-practice-product-suggestion-system/</link>
+      <pubDate>Thu, 23 Mar 2023 23:48:05 +0700</pubDate>
+      
+      <guid>https://doan-hai.github.io/design-pattern/design-pattern-practice-product-suggestion-system/</guid>
+      <description>Bạn cần thiết kế một hệ thống gợi ý sản phẩm cho một nền tảng thương mại điện tử. Hệ thống cần hỗ trợ nhiều phương pháp gợi ý khác nhau như: gợi ý dựa trên lịch sử mua hàng, gợi ý dựa trên xu hướng chung, gợi ý dựa trên dữ liệu người dùng tương tự.</description>
+    </item>
+    
+    <item>
+      <title>Luyện tập Design Pattern: Hệ Thống Quản Lý Công Việc</title>
+      <link>https://doan-hai.github.io/design-pattern/design-pattern-practice-work-management-system/</link>
+      <pubDate>Thu, 23 Mar 2023 23:48:05 +0700</pubDate>
+      
+      <guid>https://doan-hai.github.io/design-pattern/design-pattern-practice-work-management-system/</guid>
+      <description>Bạn cần thiết kế một hệ thống quản lý công việc cho một công ty. Mỗi công việc có thể thuộc một loại khác nhau như: Công việc định kỳ, Công việc một lần, Công việc ưu tiên.</description>
+    </item>
+    
+    <item>
+      <title>Luyện tập Design Pattern: Hệ Thống Quản Lý Đơn Hàng</title>
+      <link>https://doan-hai.github.io/design-pattern/design-pattern-practice-order-management-system/</link>
+      <pubDate>Thu, 23 Mar 2023 23:48:05 +0700</pubDate>
+      
+      <guid>https://doan-hai.github.io/design-pattern/design-pattern-practice-order-management-system/</guid>
+      <description>Bạn đang phát triển một hệ thống thương mại điện tử. Khi một đơn hàng được đặt, hệ thống cần thực hiện nhiều tác vụ khác nhau như: kiểm tra tính hợp lệ của đơn hàng, tính toán phí vận chuyển, gửi email xác nhận đơn hàng, cập nhật số lượng hàng tồn kho.</description>
+    </item>
+    
+    <item>
+      <title>Luyện tập Design Pattern: Hệ Thống Quản Lý Khách Sạn</title>
+      <link>https://doan-hai.github.io/design-pattern/design-pattern-practice-hotel-management-system/</link>
+      <pubDate>Thu, 23 Mar 2023 23:48:05 +0700</pubDate>
+      
+      <guid>https://doan-hai.github.io/design-pattern/design-pattern-practice-hotel-management-system/</guid>
+      <description>Bạn đang phát triển một hệ thống quản lý khách sạn với các loại phòng khác nhau như phòng tiêu chuẩn, phòng cao cấp, và phòng suite.</description>
+    </item>
+    
+    <item>
+      <title>Luyện tập Design Pattern: Hệ Thống Quản Lý Kho Hàng</title>
+      <link>https://doan-hai.github.io/design-pattern/design-pattern-practice-warehouse-management-system/</link>
+      <pubDate>Thu, 23 Mar 2023 23:48:05 +0700</pubDate>
+      
+      <guid>https://doan-hai.github.io/design-pattern/design-pattern-practice-warehouse-management-system/</guid>
+      <description>Bạn cần xây dựng một hệ thống quản lý kho hàng, hỗ trợ nhiều loại sản phẩm khác nhau và các phương thức lưu trữ riêng biệt.</description>
+    </item>
+    
+    <item>
+      <title>Luyện tập Design Pattern: Hệ Thống Thông Báo</title>
+      <link>https://doan-hai.github.io/design-pattern/design-pattern-practice-notification-system/</link>
+      <pubDate>Thu, 23 Mar 2023 23:48:05 +0700</pubDate>
+      
+      <guid>https://doan-hai.github.io/design-pattern/design-pattern-practice-notification-system/</guid>
+      <description>Công ty của bạn cần một hệ thống thông báo có thể gửi tin nhắn qua nhiều kênh khác nhau, như email, tin nhắn SMS và thông báo đẩy (push notification).</description>
+    </item>
+    
+    <item>
+      <title>Luyện tập Design Pattern: Hệ Thống Tự Động Hóa Marketing</title>
+      <link>https://doan-hai.github.io/design-pattern/design-pattern-practice-marketing-automation-system/</link>
+      <pubDate>Thu, 23 Mar 2023 23:48:05 +0700</pubDate>
+      
+      <guid>https://doan-hai.github.io/design-pattern/design-pattern-practice-marketing-automation-system/</guid>
+      <description>Bạn cần thiết kế một hệ thống gửi email tự động cho một nền tảng thương mại điện tử. Hệ thống có thể gửi email theo các sự kiện như: chào mừng người dùng mới, nhắc nhở người dùng về giỏ hàng bị bỏ quên, gửi mã giảm giá khi khách hàng chưa mua hàng trong một thời gian dài.</description>
+    </item>
+    
+    <item>
+      <title>Luyện tập Design Pattern: Quản lý Kết Nối Cơ Sở Dữ Liệu</title>
+      <link>https://doan-hai.github.io/design-pattern/design-pattern-practice-database-connection-management/</link>
+      <pubDate>Thu, 23 Mar 2023 23:48:05 +0700</pubDate>
+      
+      <guid>https://doan-hai.github.io/design-pattern/design-pattern-practice-database-connection-management/</guid>
+      <description>Bạn đang xây dựng một ứng dụng cần kết nối đến cơ sở dữ liệu MySQL. Việc tạo kết nối mới mỗi khi cần truy vấn dữ liệu là không hiệu quả và gây tiêu tốn tài nguyên. Hãy thiết kế một cơ chế giúp quản lý và tái sử dụng các kết nối đến cơ sở dữ liệu một cách tối ưu.</description>
+    </item>
+    
+    <item>
+      <title>Luyện tập Design Pattern: Trình Quản Lý Tài Liệu</title>
+      <link>https://doan-hai.github.io/design-pattern/design-pattern-practice-document-manager/</link>
+      <pubDate>Thu, 23 Mar 2023 23:48:05 +0700</pubDate>
+      
+      <guid>https://doan-hai.github.io/design-pattern/design-pattern-practice-document-manager/</guid>
+      <description>Công ty bạn đang phát triển một ứng dụng quản lý tài liệu. Mỗi loại tài liệu có thể có các định dạng khác nhau như PDF, Word, và Excel. Khi mở tài liệu, ứng dụng cần xử lý chúng theo cách tương ứng.
+Yêu cầu:
+Mỗi loại tài liệu có cách xử lý riêng biệt. Khi thêm định dạng tài liệu mới, không làm thay đổi cấu trúc hiện tại.</description>
+    </item>
+    
+    <item>
+      <title>Luyện tập Design Pattern: Trò Chơi Chiến Thuật</title>
+      <link>https://doan-hai.github.io/design-pattern/design-pattern-practice-strategy-games/</link>
+      <pubDate>Thu, 23 Mar 2023 23:48:05 +0700</pubDate>
+      
+      <guid>https://doan-hai.github.io/design-pattern/design-pattern-practice-strategy-games/</guid>
+      <description>Bạn đang phát triển một trò chơi chiến thuật, nơi mỗi nhân vật có thể có nhiều loại vũ khí khác nhau. Mỗi loại vũ khí có cách tấn công riêng biệt, ví dụ:
+Kiếm: Chém kẻ địch Cung: Bắn tên vào kẻ địch Gậy phép: Tung ra phép thuật Yêu cầu:
+Nhân vật có thể thay đổi vũ khí mà không cần thay đổi toàn bộ logic của trò chơi.</description>
+    </item>
+    
+    <item>
+      <title>Optimism standard bridge contract walkthrough</title>
+      <link>https://doan-hai.github.io/design-pattern/example/</link>
+      <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://doan-hai.github.io/design-pattern/example/</guid>
+      <description>Optimism is an Optimistic Rollup. Optimistic rollups can process transactions for a much lower price than Ethereum Mainnet (also known as layer 1 or L1) because transactions are only processed by a few nodes, instead of every node on the network. At the same time, the data is all written to L1 so everything can be proved and reconstructed with all the integrity and availability guarantees of Mainnet.
+To use L1 assets on Optimism (or any other L2), the assets need to be bridged.</description>
+    </item>
+    
+  </channel>
+</rss>

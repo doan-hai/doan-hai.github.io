@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-DZTHZZTR25"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){ dataLayer.push(arguments); }
+			gtag('js', new Date());
+			gtag('config', 'G-DZTHZZTR25');
+		</script>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Saga pattern: Từ lý thuyết đến triển khai thực tế &middot; Home</title>
+
+		
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+		<link rel="icon" href="/favicon.ico"/>
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Home" />
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					
+						<h2 class="nav-title">Home</h2>
+					
+				</a>
+				<ul>
+    
+    
+        <li>
+            <a href="/design-pattern/">
+                
+                <span>Design Pattern</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/system-architecture/">
+                
+                <span>System Architecture</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/database/">
+                
+                <span>Database</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/certificate/">
+                
+                <span>Certificate</span>
+                
+            </a>
+        </li>
+    
+</ul>
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<h1 class="post-title">Saga pattern: Từ lý thuyết đến triển khai thực tế</h1>
+
+		<div class="post-info">
+
+
+
+
+
+
+        <time datetime="2023-03-23 23:48:05 &#43;0700 &#43;07">
+            <span class="catalogue-publishdate">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/12.0.4/2/svg/1f4c6.svg" style="width: 1em; height: 1em; margin: 0 0.05em 0 0.1em; vertical-align: -0.1em;" alt="">
+            </span>
+            March 23, 2023
+        </time>
+</div>
+
+		<div class="post-container">
+			 <div class="catalogue-tag">
+    
+ </div>
+
+		</div>
+		<div class="post-line"></div>
+
+		
+
+		<p>Bạn đang xây dựng một ứng dụng cần kết nối đến cơ sở dữ liệu MySQL. Việc tạo kết nối mới mỗi khi cần
+truy vấn dữ liệu là không hiệu quả và gây tiêu tốn tài nguyên. Hãy thiết kế một cơ chế giúp quản lý
+và tái sử dụng các kết nối đến cơ sở dữ liệu một cách tối ưu.</p>
+<p>Yêu cầu:</p>
+<ul>
+<li>Đảm bảo chỉ có một số lượng kết nối giới hạn được tạo ra.</li>
+<li>Khi một kết nối không còn sử dụng, nó có thể được tái sử dụng.</li>
+<li>Hạn chế tối đa số lần tạo kết nối mới để tiết kiệm tài nguyên hệ thống.</li>
+<li>Đảm bảo cơ chế thread-safe khi truy cập từ nhiều luồng.</li>
+</ul>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/design-pattern/example/" class="left arrow">&#8592;</a>
+		<a href="/design-pattern/design-pattern-practice-strategy-games/" class="right arrow">&#8594;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+
+	<script src="https://giscus.app/client.js"
+					data-repo="doan-hai/blog-comments"
+					data-repo-id="R_kgDOOkmWoA"
+					data-category="General"
+					data-category-id="DIC_kwDOOkmWoM4Cpx-O"
+					data-mapping="pathname"
+					data-strict="0"
+					data-reactions-enabled="1"
+					data-emit-metadata="0"
+					data-input-position="bottom"
+					data-theme="preferred_color_scheme"
+					data-lang="vi"
+					crossorigin="anonymous"
+					async>
+	</script>
+</main>
+
+
+        		<footer>
+			
+			<span>
+			&copy; <time datetime="2025-05-13 16:38:19.558918 &#43;0700 &#43;07 m=&#43;0.124365667">2025</time> Đoàn Hải. Made with <a href='https://gohugo.io'>Hugo</a>.
+			</span>
+		</footer>
+
+
+        
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    </body>
+</html>

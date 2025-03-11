@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>aws on Home</title>
+    <link>https://doan-hai.github.io/tags/aws/</link>
+    <description>Recent content in aws on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Mar 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://doan-hai.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Câu hỏi luyện thi chứng chỉ AWS Certified Solutions Architect Associate (SAA-C03) - Phần 1</title>
+      <link>https://doan-hai.github.io/certificate/aws-certified-solutions-architect-associate-saa-c03-exam-practice-questions-part-1/</link>
+      <pubDate>Thu, 23 Mar 2023 00:00:00 +0700</pubDate>
+      
+      <guid>https://doan-hai.github.io/certificate/aws-certified-solutions-architect-associate-saa-c03-exam-practice-questions-part-1/</guid>
+      <description>Question 1 A large engineering company plans to deploy a distributed application with Amazon Aurora as a database. The database should be restored with a Recovery Time objective (RTO) of one minute when there is a service degradation in the primary region. The service restoration should incur the least admin work.
+What approach can be initiated to design an Aurora database to meet cross-region disaster recovery requirements?
+A. Use Amazon Aurora Global Database and use the secondary region as a failover for service degradation in the primary region</description>
+    </item>
+    
+  </channel>
+</rss>

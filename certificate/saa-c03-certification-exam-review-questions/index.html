@@ -1,0 +1,1901 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-DZTHZZTR25"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){ dataLayer.push(arguments); }
+			gtag('js', new Date());
+			gtag('config', 'G-DZTHZZTR25');
+		</script>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Câu hỏi luyện thi chứng chỉ AWS Certified Solutions Architect Associate (SAA-C03) - Phần 1 &middot; Home</title>
+
+		
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+		<link rel="icon" href="/favicon.ico"/>
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Home" />
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					
+						<h2 class="nav-title">Home</h2>
+					
+				</a>
+				<ul>
+    
+    
+        <li>
+            <a href="/design-pattern/">
+                
+                <span>Design Pattern</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/system-architecture/">
+                
+                <span>System Architecture</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/database/">
+                
+                <span>Database</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/certificate/">
+                
+                <span>Certificate</span>
+                
+            </a>
+        </li>
+    
+</ul>
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<h1 class="post-title">Câu hỏi luyện thi chứng chỉ AWS Certified Solutions Architect Associate (SAA-C03) - Phần 1</h1>
+
+		<div class="post-info">
+
+
+
+
+
+
+        <time datetime="2023-03-23 23:48:05 &#43;0700 &#43;07">
+            <span class="catalogue-publishdate">
+                <img src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/12.0.4/2/svg/1f4c6.svg" style="width: 1em; height: 1em; margin: 0 0.05em 0 0.1em; vertical-align: -0.1em;" alt="">
+            </span>
+            March 23, 2023
+        </time>
+</div>
+
+		<div class="post-container">
+			 <div class="catalogue-tag">
+    
+        
+            
+            
+            
+            
+            
+            
+                <div class="catalogue-tagButton catalogue-tagButton-color6">postgresql</div>
+            
+            
+        
+        
+        
+    
+        
+            
+            
+                <div class="catalogue-tagButton catalogue-tagButton-color2">patroni</div>
+            
+            
+            
+            
+            
+            
+        
+        
+        
+    
+        
+            
+            
+            
+            
+            
+            
+            
+                <div class="catalogue-tagButton catalogue-tagButton-color7">etcd</div>
+            
+        
+        
+        
+    
+        
+            
+            
+            
+            
+            
+            
+                <div class="catalogue-tagButton catalogue-tagButton-color6">haproxy</div>
+            
+            
+        
+        
+        
+    
+        
+            
+            
+                <div class="catalogue-tagButton catalogue-tagButton-color2">keepalived</div>
+            
+            
+            
+            
+            
+            
+        
+        
+        
+    
+ </div>
+
+		</div>
+		<div class="post-line"></div>
+
+		
+
+		<h4 id="question-1">Question 1</h4>
+<p>A large engineering company plans to deploy a distributed application with Amazon Aurora as a
+database. The database should be restored with a Recovery Time objective (RTO) of one minute when
+there is a service degradation in the primary region. The service restoration should incur the least
+admin work.</p>
+<p>What approach can be initiated to design an Aurora database to meet cross-region disaster recovery
+requirements?</p>
+<p>A.
+Use Amazon Aurora Global Database and use the secondary region as a failover for service degradation
+in the primary region</p>
+<p>B.
+Use Multi-AZ deployments with Aurora Replicas which will go into failover to one of the Replicas for
+service degradation in the primary region</p>
+<p>C.
+Create DB Snapshots from the existing Amazon Aurora database and save them in the Amazon S3 bucket.
+Create a new database instance in a new region using these snapshots when service degradation occurs
+in the primary region</p>
+<p>D.
+Use Amazon Aurora point-in-time recovery to automatically store backups in the Amazon S3 bucket.
+Restore a new database instance in a new region when service degradation occurs in the primary
+region using these backups</p>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+Correct Answer: A<br>
+
+For distributed applications, Global databases can be used. With this, Amazon Aurora spans a single
+database across multiple regions. This enables fast reads from each region and helps quick
+cross-region disaster recovery. With the Global database, failover to the secondary region can be
+completed with an RTO of one minute from the degradation or complete failures in the primary
+region.</br>
+
+Option B is incorrect as this will work only in case of service impact with one of the Availability
+Zones. It won't work for regional outages. </br>
+Option C is incorrect as creating a new DB instance with snapshots will involve manual work in
+provisioning the instance which will delay service restoration. </br>
+Option D is incorrect as although these backups are automated using Amazon Aurora point-in-time
+recovery, restoration to another region will result in delay in service restoration.</br>
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-2">Question 2</h4>
+<p>You have hosted an application on an EC2 Instance in a public subnet in a VPC. For this
+application’s database layer, you are using an RDS DB instance placed in the private subnet of the
+same VPC, but it is not publicly accessible. As the best practice, you have been storing the DB
+credentials in AWS Secrets Manager instead of hardcoding them in the application code.</p>
+<p>The Security team has reviewed the architecture and is concerned that the internet connectivity to
+AWS Secrets Manager is a security risk. How can you resolve this security concern?</p>
+<p>A.
+Create an Interface VPC endpoint to establish a private connection between your VPC and Secrets
+Manager</p>
+<p>B.
+Access the credentials from Secrets Manager through a Site-to-Site VPN Connection</p>
+<p>C.
+Create a Gateway VPC endpoint to establish a private connection between your VPC and Secrets Manager</p>
+<p>D.
+Access the credentials from Secrets Manager by using a NAT Gateway</p>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+Correct Answer: A </br>
+
+OPTION A is CORRECT because, as per the documentation, “You can establish a private connection
+between your VPC and Secrets Manager by creating an interface VPC endpoint.” That’s how your EC2
+instance can fetch the DB Credentials from the Secrets Manager privately. Once it gets the
+credentials, it can securely establish the connection with the RDS DB instance. </br>
+
+OPTION B is incorrect because a Site-to-Site VPN connection would be more appropriate in case of
+hybrid environments where you want to connect AWS and on-premises networks. Here, we just have two
+AWS services that need to communicate without the internet. </br>
+OPTION C is incorrect. Although using the VPC Endpoint indicates the correct solution, the type of
+interface mentioned is incorrect. For AWS Secrets Manager, the Gateway endpoint is
+unavailable. </br>
+OPTION D is incorrect because NAT Gateway is more appropriate for communicating privately with other
+VPCs or on-premises environments. This is more expensive. Mostly it is used when your private subnet
+resources want to communicate one way (only outbound) with the Internet. Here in this question, we
+just have the EC2 instance that needs to communicate securely without the internet with AWS Secrets
+Manager which resides outside VPC. That’s why using a VPC Endpoint would satisfy the requirement.
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-3">Question 3</h4>
+<p>You are the Solutions Architect of an organization that runs 100 of modern EC2 instances in a
+production environment. To avoid non-compliance, you must immediately update the packages on all the
+production EC2 instances. There is a DevSecOps team who is in charge of security group policies used
+in those EC2, has the SSH access disabled in the security group policy. When you reached them to get
+the SSH enabled, they denied that.</p>
+<p>Which of the below options will help you to roll out the package for all the EC2 instances despite
+having the above restrictions from the DevSecOps team?</p>
+<p>A.
+Use AWS Config to roll out the package all at once and install it in EC2 instances</p>
+<p>B.
+Get the System Manager role added to your IAM roles and use Systems Manager Run Command to roll out
+the package installation</p>
+<p>C.
+Get the System Manager role added to your IAM roles and use System Manager Session Manager to SSH
+into the EC2s from browser mode to install the package</p>
+<p>D.
+Get the user credentials of one of the Security members to SSH into the EC2 instance and proceed
+with package installation</p>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+Correct Answer: B </br>
+
+Option A is incorrect because AWS Config is used to monitor configuration changes of your AWS
+resources. For example, someone disables the CloudTrail log, deletes an account from an OU, etc. AWS
+Config also enables you to simplify compliance auditing, security analysis, change management, and
+operational troubleshooting. Hence, AWS Config is not a solution to install packages in EC2
+instances. </br>
+Option B is CORRECT because once the user has the suitable IAM SSM role, AWS System manager Run
+Command can be used to remotely run commands, like update packages, on all the EC2 instances. One
+can use Run Command from the AWS Management Console, AWS Command Line Interface (AWS CLI), AWS Tools
+for Windows PowerShell, or the AWS SDKs with no extra cost. </br>
+Option C is incorrect because this method requires you to manually connect to each of the EC2
+instances individually, which would result in a lot of time and effort to patch all 100 EC2
+instances. Hence, this option can be easily neglected. </br>
+Option D is incorrect because AWS never encourages sharing of credentials and it can be treated as a
+security violation.
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-4">Question 4</h4>
+<p>A finance company is using Amazon S3 to store data for all its customers. During an annual audit, it
+was observed that sensitive data is stored by some of the customers. Operations Head is looking for
+an automated tool to scan all data in Amazon S3 buckets and create a report based on the findings
+from all the buckets with sensitive data.</p>
+<p>Which solution can be designed to get the required details?</p>
+<p>A.
+Enable Amazon GuardDuty on the Amazon S3 buckets</p>
+<p>B.
+Enable Amazon Detective on the Amazon S3 buckets</p>
+<p>C.
+Enable Amazon Macie on the Amazon S3 buckets</p>
+<p>D.
+Enable Amazon Inspector on the Amazon S3 buckets</p>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+Correct Answer: C
+
+Amazon Macie uses machine learning and pattern matching to discover, monitor, and protect sensitive
+data stored in Amazon S3 buckets.
+
+Once Amazon Macie is enabled on the Amazon S3, it first generates an inventory of S3 buckets. It
+automatically discovers and reports any sensitive data stored in an Amazon S3 bucket by creating and
+running sensitive data discovery jobs. It further provides a detailed report for any findings with
+respect to the sensitive data. These jobs can be initiated at periodic intervals or just once
+on-demand basis.
+
+Option A is incorrect as Amazon GuardDuty protects against the use of compromised credentials or
+unusual access to Amazon S3. It does not scan data in Amazon S3 buckets to find any sensitive data
+stored in it.
+Option B is incorrect as Amazon Detective analyses and visualizes security data from AWS security
+services such as Amazon GuardDuty, Amazon Macie, and AWS Security Hub to get the root cause of the
+potential security issues. It does not scan data in Amazon S3 buckets to find any sensitive data
+stored in it.
+Option D is incorrect as Amazon Inspector evaluates Amazon EC2 instance for any software
+vulnerability or network exposure. It does not scan data in Amazon S3 buckets to find any sensitive
+data stored in it.
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-5">Question 5</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-6">Question 6</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-7">Question 7</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-8">Question 8</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-9">Question 9</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-10">Question 10</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-11">Question 11</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-12">Question 12</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-13">Question 13</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-14">Question 14</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-15">Question 15</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-16">Question 16</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-17">Question 17</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-18">Question 18</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-19">Question 19</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-20">Question 20</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-21">Question 21</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-22">Question 22</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-23">Question 23</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-24">Question 24</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-25">Question 25</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-26">Question 26</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-27">Question 27</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-28">Question 28</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-29">Question 29</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-30">Question 30</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-31">Question 31</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-32">Question 32</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-33">Question 33</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-34">Question 34</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-35">Question 35</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-36">Question 36</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-37">Question 37</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-38">Question 38</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-39">Question 39</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-40">Question 40</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-41">Question 41</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-42">Question 42</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-43">Question 43</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-44">Question 44</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-45">Question 45</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-46">Question 46</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-47">Question 47</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-48">Question 48</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-49">Question 49</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+<h4 id="question-50">Question 50</h4>
+<div class="toggle-wrapper">
+  <p>
+    <button
+        onclick="toggleContent(this)"
+        data-label-show="Explanation"
+    data-label-hide="Explanation"
+    >
+    Explanation
+    </button>
+  </p>
+  <div class="toggle-content" style="display: none;">
+    
+
+
+  </div>
+</div>
+
+<script>
+  function toggleContent(button) {
+    const wrapper = button.closest(".toggle-wrapper");
+    const content = wrapper.querySelector(".toggle-content");
+    const isHidden = window.getComputedStyle(content).display === "none";
+
+    content.style.display = isHidden ? "block" : "none";
+
+    const labelShow = button.getAttribute("data-label-show");
+    const labelHide = button.getAttribute("data-label-hide");
+    button.innerText = isHidden ? labelHide : labelShow;
+  }
+</script>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/certificate/psm1-certification-exam-review-questions/" class="left arrow">&#8592;</a>
+		<a href="/database/install-and-configure-postgresql-cluster-with-patroni-for-production-environment/" class="right arrow">&#8594;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+
+	<script src="https://giscus.app/client.js"
+					data-repo="doan-hai/blog-comments"
+					data-repo-id="R_kgDOOkmWoA"
+					data-category="General"
+					data-category-id="DIC_kwDOOkmWoM4Cpx-O"
+					data-mapping="pathname"
+					data-strict="0"
+					data-reactions-enabled="1"
+					data-emit-metadata="0"
+					data-input-position="bottom"
+					data-theme="preferred_color_scheme"
+					data-lang="vi"
+					crossorigin="anonymous"
+					async>
+	</script>
+</main>
+
+
+        		<footer>
+			
+			<span>
+			&copy; <time datetime="2025-05-13 16:38:19.557389 &#43;0700 &#43;07 m=&#43;0.122836876">2025</time> Đoàn Hải. Made with <a href='https://gohugo.io'>Hugo</a>.
+			</span>
+		</footer>
+
+
+        
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    </body>
+</html>
