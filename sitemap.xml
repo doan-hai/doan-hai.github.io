@@ -2,10 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://doan-hai.github.io/database/install-and-configure-postgresql-cluster-with-patroni-for-production-environment/</loc>
+    <lastmod>2023-03-23T23:48:05+07:00</lastmod>
+  </url><url>
+    <loc>https://doan-hai.github.io/database/</loc>
+    <lastmod>2023-03-23T23:48:05+07:00</lastmod>
+  </url><url>
     <loc>https://doan-hai.github.io/design-pattern/</loc>
     <lastmod>2023-03-23T23:48:05+07:00</lastmod>
   </url><url>
+    <loc>https://doan-hai.github.io/tags/etcd/</loc>
+    <lastmod>2023-03-23T23:48:05+07:00</lastmod>
+  </url><url>
+    <loc>https://doan-hai.github.io/tags/haproxy/</loc>
+    <lastmod>2023-03-23T23:48:05+07:00</lastmod>
+  </url><url>
     <loc>https://doan-hai.github.io/</loc>
+    <lastmod>2023-03-23T23:48:05+07:00</lastmod>
+  </url><url>
+    <loc>https://doan-hai.github.io/tags/keepalived/</loc>
     <lastmod>2023-03-23T23:48:05+07:00</lastmod>
   </url><url>
     <loc>https://doan-hai.github.io/design-pattern/design-pattern-practice-report-system/</loc>
@@ -47,8 +62,36 @@
     <loc>https://doan-hai.github.io/design-pattern/design-pattern-practice-strategy-games/</loc>
     <lastmod>2023-03-23T23:48:05+07:00</lastmod>
   </url><url>
-    <loc>https://doan-hai.github.io/categories/</loc>
+    <loc>https://doan-hai.github.io/tags/patroni/</loc>
+    <lastmod>2023-03-23T23:48:05+07:00</lastmod>
+  </url><url>
+    <loc>https://doan-hai.github.io/tags/postgresql/</loc>
+    <lastmod>2023-03-23T23:48:05+07:00</lastmod>
+  </url><url>
+    <loc>https://doan-hai.github.io/system-architecture/saga-pattern-from-theory-to-practical-implementation/</loc>
+    <lastmod>2023-03-23T23:48:05+07:00</lastmod>
+  </url><url>
+    <loc>https://doan-hai.github.io/system-architecture/</loc>
+    <lastmod>2023-03-23T23:48:05+07:00</lastmod>
   </url><url>
     <loc>https://doan-hai.github.io/tags/</loc>
+    <lastmod>2023-03-23T23:48:05+07:00</lastmod>
+  </url><url>
+    <loc>https://doan-hai.github.io/tags/bridge/</loc>
+    <lastmod>2022-03-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://doan-hai.github.io/tags/layer-2/</loc>
+    <lastmod>2022-03-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://doan-hai.github.io/tags/optimism/</loc>
+    <lastmod>2022-03-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://doan-hai.github.io/design-pattern/example/</loc>
+    <lastmod>2022-03-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://doan-hai.github.io/tags/solidity/</loc>
+    <lastmod>2022-03-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://doan-hai.github.io/categories/</loc>
   </url>
 </urlset>
