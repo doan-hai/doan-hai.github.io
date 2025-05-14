@@ -6,7 +6,17 @@
     <description>Recent content in cloud on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Mar 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://doan-hai.github.io/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Mar 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://doan-hai.github.io/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Câu hỏi luyện thi chứng chỉ AWS Certified Solutions Architect Associate (SAA-C03) - Phần 2</title>
+      <link>https://doan-hai.github.io/certificate/aws-certified-solutions-architect-associate-saa-c03-exam-practice-questions-part-2/</link>
+      <pubDate>Fri, 24 Mar 2023 00:00:00 +0700</pubDate>
+      
+      <guid>https://doan-hai.github.io/certificate/aws-certified-solutions-architect-associate-saa-c03-exam-practice-questions-part-2/</guid>
+      <description>Question 1 An online hypermarket company has deployed a web application using a REST API with Amazon API Gateway. Recently, they upgraded the backend to make the API scalable. After the upgrade, it was discovered that some consumers using older methods could no longer access the API, as the older method is not compatible with the responses from the backend.
+How should a solutions architect redesign the API Gateway to ensure compatibility with the old method?</description>
+    </item>
+    
     <item>
       <title>Câu hỏi luyện thi chứng chỉ AWS Certified Solutions Architect Associate (SAA-C03) - Phần 1</title>
       <link>https://doan-hai.github.io/certificate/aws-certified-solutions-architect-associate-saa-c03-exam-practice-questions-part-1/</link>

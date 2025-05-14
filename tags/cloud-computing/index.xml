@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>aws on Home</title>
-    <link>https://doan-hai.github.io/tags/aws/</link>
-    <description>Recent content in aws on Home</description>
+    <title>cloud computing on Home</title>
+    <link>https://doan-hai.github.io/tags/cloud-computing/</link>
+    <description>Recent content in cloud computing on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Mar 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://doan-hai.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Mar 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://doan-hai.github.io/tags/cloud-computing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>400&#43; Câu hỏi luyện thi chứng chỉ AWS Certified Solutions Architect Associate (SAA-C03) - Phần 2</title>
       <link>https://doan-hai.github.io/certificate/aws-certified-solutions-architect-associate-saa-c03-exam-practice-questions-part-2/</link>

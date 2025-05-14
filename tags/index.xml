@@ -6,38 +6,56 @@
     <description>Recent content in Tags on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Mar 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://doan-hai.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Mar 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://doan-hai.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>aws</title>
       <link>https://doan-hai.github.io/tags/aws/</link>
-      <pubDate>Thu, 23 Mar 2023 00:00:00 +0700</pubDate>
+      <pubDate>Fri, 24 Mar 2023 00:00:00 +0700</pubDate>
       
       <guid>https://doan-hai.github.io/tags/aws/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>cloud</title>
-      <link>https://doan-hai.github.io/tags/cloud/</link>
-      <pubDate>Thu, 23 Mar 2023 00:00:00 +0700</pubDate>
+      <title>aws certification</title>
+      <link>https://doan-hai.github.io/tags/aws-certification/</link>
+      <pubDate>Fri, 24 Mar 2023 00:00:00 +0700</pubDate>
       
-      <guid>https://doan-hai.github.io/tags/cloud/</guid>
+      <guid>https://doan-hai.github.io/tags/aws-certification/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>exam</title>
-      <link>https://doan-hai.github.io/tags/exam/</link>
-      <pubDate>Thu, 23 Mar 2023 00:00:00 +0700</pubDate>
+      <title>aws exam</title>
+      <link>https://doan-hai.github.io/tags/aws-exam/</link>
+      <pubDate>Fri, 24 Mar 2023 00:00:00 +0700</pubDate>
       
-      <guid>https://doan-hai.github.io/tags/exam/</guid>
+      <guid>https://doan-hai.github.io/tags/aws-exam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cloud computing</title>
+      <link>https://doan-hai.github.io/tags/cloud-computing/</link>
+      <pubDate>Fri, 24 Mar 2023 00:00:00 +0700</pubDate>
+      
+      <guid>https://doan-hai.github.io/tags/cloud-computing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>practice test</title>
+      <link>https://doan-hai.github.io/tags/practice-test/</link>
+      <pubDate>Fri, 24 Mar 2023 00:00:00 +0700</pubDate>
+      
+      <guid>https://doan-hai.github.io/tags/practice-test/</guid>
       <description></description>
     </item>
     
     <item>
       <title>saa c03</title>
       <link>https://doan-hai.github.io/tags/saa-c03/</link>
-      <pubDate>Thu, 23 Mar 2023 00:00:00 +0700</pubDate>
+      <pubDate>Fri, 24 Mar 2023 00:00:00 +0700</pubDate>
       
       <guid>https://doan-hai.github.io/tags/saa-c03/</guid>
       <description></description>
@@ -46,7 +64,7 @@
     <item>
       <title>solutions architect</title>
       <link>https://doan-hai.github.io/tags/solutions-architect/</link>
-      <pubDate>Thu, 23 Mar 2023 00:00:00 +0700</pubDate>
+      <pubDate>Fri, 24 Mar 2023 00:00:00 +0700</pubDate>
       
       <guid>https://doan-hai.github.io/tags/solutions-architect/</guid>
       <description></description>
