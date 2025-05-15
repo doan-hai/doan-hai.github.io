@@ -97,36 +97,8 @@
     
         
             
-                <div class="catalogue-tagButton catalogue-tagButton-color1">aws</div>
             
-            
-            
-            
-            
-            
-            
-        
-        
-        
-    
-        
-            
-            
-                <div class="catalogue-tagButton catalogue-tagButton-color2">aws certification</div>
-            
-            
-            
-            
-            
-            
-        
-        
-        
-    
-        
-            
-            
-                <div class="catalogue-tagButton catalogue-tagButton-color2">cloud computing</div>
+                <div class="catalogue-tagButton catalogue-tagButton-color2">aws</div>
             
             
             
@@ -141,7 +113,7 @@
             
             
             
-                <div class="catalogue-tagButton catalogue-tagButton-color3">solutions architect</div>
+                <div class="catalogue-tagButton catalogue-tagButton-color3">aws certification</div>
             
             
             
@@ -158,7 +130,49 @@
             
             
             
-                <div class="catalogue-tagButton catalogue-tagButton-color6">saa c03</div>
+            
+        
+        
+            <div class="catalogue-tagButton catalogue-tagButton-color9">cloud computing</div>
+        
+        
+    
+        
+            
+            
+            
+            
+            
+            
+            
+        
+            <div class="catalogue-tagButton catalogue-tagButton-color8">solutions architect</div>
+        
+        
+        
+    
+        
+            
+            
+            
+            
+            
+            
+            
+                <div class="catalogue-tagButton catalogue-tagButton-color7">saa c03</div>
+            
+        
+        
+        
+    
+        
+            
+            
+            
+            
+            
+                <div class="catalogue-tagButton catalogue-tagButton-color5">aws exam</div>
+            
             
             
         
@@ -175,21 +189,7 @@
             
         
         
-            <div class="catalogue-tagButton catalogue-tagButton-color9">aws exam</div>
-        
-        
-    
-        
-            
-            
-            
-            
-            
-            
-            
-        
-            <div class="catalogue-tagButton catalogue-tagButton-color8">practice test</div>
-        
+            <div class="catalogue-tagButton catalogue-tagButton-color9">practice test</div>
         
         
     
@@ -226,7 +226,7 @@ region using these backups</p>
     <button
         onclick="toggleContent(this)"
         data-label-show="Explanation"
-    data-label-hide="Explanation"
+    data-label-hide="Hide"
     >
     Explanation
     </button>
@@ -239,16 +239,16 @@ For distributed applications, Global databases can be used. With this, Amazon Au
 database across multiple regions. This enables fast reads from each region and helps quick
 cross-region disaster recovery. With the Global database, failover to the secondary region can be
 completed with an RTO of one minute from the degradation or complete failures in the primary
-region.</br>
+region.<br />
 
 - Option B is incorrect as this will work only in case of service impact with one of the
-Availability
-Zones. It won't work for regional outages. </br>
+  Availability
+  Zones. It won't work for regional outages. <br />
 - Option C is incorrect as creating a new DB instance with snapshots will involve manual work in
-provisioning the instance which will delay service restoration. </br>
+  provisioning the instance which will delay service restoration. <br />
 - Option D is incorrect as although these backups are automated using Amazon Aurora
-point-in-time recovery, restoration to another region will result in delay in service
-restoration.</br>
+  point-in-time recovery, restoration to another region will result in delay in service
+  restoration.<br />
 
 
   </div>
@@ -288,36 +288,38 @@ Access the credentials from Secrets Manager by using a NAT Gateway</p>
     <button
         onclick="toggleContent(this)"
         data-label-show="Explanation"
-    data-label-hide="Explanation"
+    data-label-hide="Hide"
     >
     Explanation
     </button>
   </p>
   <div class="toggle-content" style="display: none;">
     
-Correct Answer: A </br>
+Correct Answer: A <br />
 
 - Option A is CORRECT because, as per the documentation, “You can establish a private connection
-between your VPC and Secrets Manager by creating an interface VPC endpoint.” That’s how your EC2
-instance can fetch the DB Credentials from the Secrets Manager privately. Once it gets the
-credentials, it can securely establish the connection with the RDS DB instance. </br>
+  between your VPC and Secrets Manager by creating an interface VPC endpoint.” That’s how your EC2
+  instance can fetch the DB Credentials from the Secrets Manager privately. Once it gets the
+  credentials, it can securely establish the connection with the RDS DB instance. <br />
 
-<img src="/images/saa-c03-exam-practice-questions-part-1_img_1.png" alt="saa-c03-exam-practice-questions-part-1_img_1" loading="lazy"></br>
+<img src="/images/saa-c03-exam-practice-questions-part-1_img_1.png" alt="saa-c03-exam-practice-questions-part-1_img_1" loading="lazy"><br />
 
 - Option B is incorrect because a Site-to-Site VPN connection would be more appropriate in case of
-hybrid environments where you want to connect AWS and on-premises networks. Here, we just have two
-AWS services that need to communicate without the internet. </br>
+  hybrid environments where you want to connect AWS and on-premises networks. Here, we just have two
+  AWS services that need to communicate without the internet. <br />
 - Option C is incorrect. Although using the VPC Endpoint indicates the correct solution, the type of
-interface mentioned is incorrect. For AWS Secrets Manager, the Gateway endpoint is
-unavailable. </br>
+  interface mentioned is incorrect. For AWS Secrets Manager, the Gateway endpoint is
+  unavailable. <br />
 
 - Option D is incorrect because NAT Gateway is more appropriate for communicating privately with
-other VPCs or on-premises environments. This is more expensive. Mostly it is used when your private
-subnet resources want to communicate one way (only outbound) with the Internet. Here in this
-question, we just have the EC2 instance that needs to communicate securely without the internet with
-AWS
-Secrets Manager which resides outside VPC. That’s why using a VPC Endpoint would satisfy the
-requirement.
+  other VPCs or on-premises environments. This is more expensive. Mostly it is used when your
+  private
+  subnet resources want to communicate one way (only outbound) with the Internet. Here in this
+  question, we just have the EC2 instance that needs to communicate securely without the internet
+  with
+  AWS
+  Secrets Manager which resides outside VPC. That’s why using a VPC Endpoint would satisfy the
+  requirement.
 
 
   </div>
@@ -360,32 +362,32 @@ with package installation</p>
     <button
         onclick="toggleContent(this)"
         data-label-show="Explanation"
-    data-label-hide="Explanation"
+    data-label-hide="Hide"
     >
     Explanation
     </button>
   </p>
   <div class="toggle-content" style="display: none;">
     
-Correct Answer: B </br>
+Correct Answer: B <br />
 
 - Option A is incorrect because AWS Config is used to monitor configuration changes of your AWS
-resources. For example, someone disables the CloudTrail log, deletes an account from an OU, etc.
-AWS
-Config also enables you to simplify compliance auditing, security analysis, change management, and
-operational troubleshooting. Hence, AWS Config is not a solution to install packages in EC2
-instances. </br>
+  resources. For example, someone disables the CloudTrail log, deletes an account from an OU, etc.
+  AWS
+  Config also enables you to simplify compliance auditing, security analysis, change management, and
+  operational troubleshooting. Hence, AWS Config is not a solution to install packages in EC2
+  instances. <br />
 - Option B is CORRECT because once the user has the suitable IAM SSM role, AWS System manager Run
-Command can be used to remotely run commands, like update packages, on all the EC2 instances. One
-can use Run Command from the AWS Management Console, AWS Command Line Interface (AWS CLI), AWS
-Tools
-for Windows PowerShell, or the AWS SDKs with no extra cost. </br>
+  Command can be used to remotely run commands, like update packages, on all the EC2 instances. One
+  can use Run Command from the AWS Management Console, AWS Command Line Interface (AWS CLI), AWS
+  Tools
+  for Windows PowerShell, or the AWS SDKs with no extra cost. <br />
 - Option C is incorrect because this method requires you to manually connect to each of the EC2
-instances individually, which would result in a lot of time and effort to patch all 100 EC2
-instances. Hence, this - Option Can be easily neglected. </br>
+  instances individually, which would result in a lot of time and effort to patch all 100 EC2
+  instances. Hence, this - Option Can be easily neglected. <br />
 - Option D is incorrect because AWS never encourages sharing of credentials and it can be
-treated as a security violation.
-
+  treated as a security violation.
+  
   </div>
 </div>
 
@@ -421,34 +423,34 @@ Enable Amazon Inspector on the Amazon S3 buckets</p>
     <button
         onclick="toggleContent(this)"
         data-label-show="Explanation"
-    data-label-hide="Explanation"
+    data-label-hide="Hide"
     >
     Explanation
     </button>
   </p>
   <div class="toggle-content" style="display: none;">
     
-Correct Answer: C </br>
+Correct Answer: C <br />
 
 Amazon Macie uses machine learning and pattern matching to discover, monitor, and protect sensitive
-data stored in Amazon S3 buckets. </br>
+data stored in Amazon S3 buckets. <br />
 
 Once Amazon Macie is enabled on the Amazon S3, it first generates an inventory of S3 buckets. It
 automatically discovers and reports any sensitive data stored in an Amazon S3 bucket by creating and
 running sensitive data discovery jobs. It further provides a detailed report for any findings with
 respect to the sensitive data. These jobs can be initiated at periodic intervals or just once
-on-demand basis. </br>
+on-demand basis. <br />
 
 - Option A is incorrect as Amazon GuardDuty protects against the use of compromised credentials or
-unusual access to Amazon S3. It does not scan data in Amazon S3 buckets to find any sensitive data
-stored in it. </br>
+  unusual access to Amazon S3. It does not scan data in Amazon S3 buckets to find any sensitive data
+  stored in it. <br />
 - Option B is incorrect as Amazon Detective analyses and visualizes security data from AWS security
-services such as Amazon GuardDuty, Amazon Macie, and AWS Security Hub to get the root cause of the
-potential security issues. It does not scan data in Amazon S3 buckets to find any sensitive data
-stored in it. </br>
+  services such as Amazon GuardDuty, Amazon Macie, and AWS Security Hub to get the root cause of the
+  potential security issues. It does not scan data in Amazon S3 buckets to find any sensitive data
+  stored in it. <br />
 - Option D is incorrect as Amazon Inspector evaluates Amazon EC2 instance for any software
-vulnerability or network exposure. It does not scan data in Amazon S3 buckets to find any
-sensitive data stored in it. </br>
+  vulnerability or network exposure. It does not scan data in Amazon S3 buckets to find any
+  sensitive data stored in it. <br />
 
 
   </div>
@@ -485,27 +487,27 @@ Amazon Lex</p>
     <button
         onclick="toggleContent(this)"
         data-label-show="Explanation"
-    data-label-hide="Explanation"
+    data-label-hide="Hide"
     >
     Explanation
     </button>
   </p>
   <div class="toggle-content" style="display: none;">
     
-Correct Answer: D </br>
+Correct Answer: D <br />
 
 Amazon Lex is specifically designed for building conversational interfaces using voice and text. It
 can understand natural language input, process it, and generate appropriate responses. It's the
-perfect choice for building a chatbot. </br>
+perfect choice for building a chatbot. <br />
 
 - Option A is incorrect. Amazon Rekognition is for image and video analysis, not suitable for
-natural language processing tasks like building a chatbot. </br>
+  natural language processing tasks like building a chatbot. <br />
 - Option B is incorrect. Amazon Comprehend is for natural language processing tasks like sentiment
-analysis and topic modeling. While it can be used for some chatbot functionalities, it's not
-designed for building complete conversational interfaces. </br>
+  analysis and topic modeling. While it can be used for some chatbot functionalities, it's not
+  designed for building complete conversational interfaces. <br />
 - Option C is incorrect. Amazon Polly is for text-to-speech conversion, which can be used for
-generating audio responses from the chatbot. However, it's not a complete solution for building a
-chatbot.
+  generating audio responses from the chatbot. However, it's not a complete solution for building a
+  chatbot.
 
 
   </div>
@@ -550,29 +552,31 @@ bucket and use Amazon Redshift Spectrum to run the query</p>
     <button
         onclick="toggleContent(this)"
         data-label-show="Explanation"
-    data-label-hide="Explanation"
+    data-label-hide="Hide"
     >
     Explanation
     </button>
   </p>
   <div class="toggle-content" style="display: none;">
     
-Correct Answer: C </br>
+Correct Answer: C <br />
 
 - Option A is incorrect because Amazon Athena can directly query data in S3. Hence this will bypass
-the use of Redshift, which is not the requirement for the customer. They insisted on Amazon Redshift
-for the query purpose for usage. </br>
-- Option B is incorrect. Even though it is possible, NAT Gateway will connect Redshift to the internet
-and make the solution less secure. Plus, this is also not a cost-effective solution. Remember that
-security and cost both are important for the company. </br>
+  the use of Redshift, which is not the requirement for the customer. They insisted on Amazon
+  Redshift
+  for the query purpose for usage. <br />
+- Option B is incorrect. Even though it is possible, NAT Gateway will connect Redshift to the
+  internet
+  and make the solution less secure. Plus, this is also not a cost-effective solution. Remember that
+  security and cost both are important for the company. <br />
 - Option C is CORRECT because VPC Endpoint is a secure and cost-effective way to connect a VPC with
-Amazon S3 privately, and the traffic does not pass through the internet. Using Amazon Redshift
-Spectrum, one can run queries against the data stored in the S3 bucket without needing the data to
-be copied to Amazon Redshift. This meets both the requirements of building a secure yet
-cost-effective solution. </br>
+  Amazon S3 privately, and the traffic does not pass through the internet. Using Amazon Redshift
+  Spectrum, one can run queries against the data stored in the S3 bucket without needing the data to
+  be copied to Amazon Redshift. This meets both the requirements of building a secure yet
+  cost-effective solution. <br />
 - Option D is incorrect because Site-to-Site VPN is used to connect an on-premises data center to
-AWS Cloud securely over the internet and is suitable for use cases like Migration, Hybrid Cloud,
-etc.
+  AWS Cloud securely over the internet and is suitable for use cases like Migration, Hybrid Cloud,
+  etc.
 
 
   </div>
@@ -614,31 +618,34 @@ configure Cross-Region Replication of the bucket</p>
     <button
         onclick="toggleContent(this)"
         data-label-show="Explanation"
-    data-label-hide="Explanation"
+    data-label-hide="Hide"
     >
     Explanation
     </button>
   </p>
   <div class="toggle-content" style="display: none;">
     
-Correct Answer: B </br>
+Correct Answer: B <br />
 
 - Option A is incorrect because Amazon S3 File Gateway presents a file interface that enables you to
-store files as objects in Amazon S3 using the industry-standard NFS and SMB file protocols. It is
-mainly used to back up on-premises files to AWS. This cannot be used to back up the EFS File
-system. </br>
+  store files as objects in Amazon S3 using the industry-standard NFS and SMB file protocols. It is
+  mainly used to back up on-premises files to AWS. This cannot be used to back up the EFS File
+  system. <br />
 - Option B is CORRECT because “AWS Backup is a simple and cost-effective way to protect your data by
-backing up your Amazon EFS file systems. Amazon EFS is natively integrated with AWS Backup. You can
-use the EFS console, API, and AWS Command Line Interface (AWS CLI) to enable automatic backups for
-your file system.” </br>
-- Option C is incorrect because Amazon FSx File Gateway provides fast, low-latency on-premises access
-to fully managed, highly reliable, and scalable file shares in the cloud using the industry-standard
-SMB protocol. It is not suitable for EFS File System backup. </br>
+  backing up your Amazon EFS file systems. Amazon EFS is natively integrated with AWS Backup. You
+  can
+  use the EFS console, API, and AWS Command Line Interface (AWS CLI) to enable automatic backups for
+  your file system.” <br />
+- Option C is incorrect because Amazon FSx File Gateway provides fast, low-latency on-premises
+  access
+  to fully managed, highly reliable, and scalable file shares in the cloud using the
+  industry-standard
+  SMB protocol. It is not suitable for EFS File System backup. <br />
 - Option D is incorrect because Amazon S3 Transfer Acceleration is for users on the web or mobile
-applications which can experience fast upload or download speed over the internet. Amazon S3
-Transfer Acceleration can speed up content transfers to and from Amazon S3. This is not a suitable
-solution because the team is looking for backup solutions on the EFS file system. This option is
-just to distract the customer. </br>
+  applications which can experience fast upload or download speed over the internet. Amazon S3
+  Transfer Acceleration can speed up content transfers to and from Amazon S3. This is not a suitable
+  solution because the team is looking for backup solutions on the EFS file system. This option is
+  just to distract the customer. <br />
 
 
   </div>
@@ -674,27 +681,28 @@ Amazon CloudTrail</p>
     <button
         onclick="toggleContent(this)"
         data-label-show="Explanation"
-    data-label-hide="Explanation"
+    data-label-hide="Hide"
     >
     Explanation
     </button>
   </p>
   <div class="toggle-content" style="display: none;">
     
-Correct Answer: B </br>
+Correct Answer: B <br />
 
 AWS X-Ray is a service that collects data about requests that your application serves and provides
 tools that you can use to view, filter, and gain insights into that data to identify issues and
-opportunities for optimization. </br>
+opportunities for optimization. <br />
 
 - Option A is incorrect because Amazon CloudWatch can check your application's logs and monitoring
-dashboards, but you can’t trace specific traffic calls. </br>
+  dashboards, but you can’t trace specific traffic calls. <br />
 - Option B is CORRECT because you can analyze different request calls happening in your application
-with AWS X-Ray. </br>
+  with AWS X-Ray. <br />
 - Option C is incorrect because Amazon Event Bridge is for managing Services events, not tracing or
-monitoring applications. </br>
-- Option D is incorrect because Amazon CloudTrail is an auditing solution. You can check API calls for
-your account, but it can’t provide you with traces from your application.
+  monitoring applications. <br />
+- Option D is incorrect because Amazon CloudTrail is an auditing solution. You can check API calls
+  for
+  your account, but it can’t provide you with traces from your application.
 
 
   </div>
@@ -732,33 +740,34 @@ Create EBS Snapshots from the volumes and store them in the EBS standard tier</p
     <button
         onclick="toggleContent(this)"
         data-label-show="Explanation"
-    data-label-hide="Explanation"
+    data-label-hide="Hide"
     >
     Explanation
     </button>
   </p>
   <div class="toggle-content" style="display: none;">
     
-Correct Answer: A </br>
+Correct Answer: A <br />
 
 Amazon EBS has a new storage tier named Amazon EBS Snapshots Archive for storing snapshots that are
-accessed rarely and stored for long periods. </br>
+accessed rarely and stored for long periods. <br />
 
 By default, snapshots created from Amazon EBS volumes are stored in Amazon EBS Snapshot standard
 tier. These are incremental snapshots. When EBS snapshots are archived, incremental snapshots are
-converted to full snapshots. </br>
+converted to full snapshots. <br />
 
 These snapshots are stored in the EBS Snapshots Archive instead of the standard tier. Storing
 snapshots in the EBS Snapshots archive costs much less than storing snapshots in the standard tier.
 EBS snapshot archive helps store snapshots for long durations for governance or compliance
-requirements, which will be rarely accessed. </br>
+requirements, which will be rarely accessed. <br />
 
 - Option B is incorrect as it will require additional work for creating an AWS Lambda function. EBS
-Snapshots archive is a more efficient way of storing snapshots for the long term.
+  Snapshots archive is a more efficient way of storing snapshots for the long term.
 - Option C is incorrect as using third-party storage will incur additional costs.
 - Option D is incorrect as all EBS snapshots are stored in a standard tier by default. Storing
-snapshots that will be rarely accessed in the standard tier will be costlier than storing in the EBS
-snapshots archive. </br>
+  snapshots that will be rarely accessed in the standard tier will be costlier than storing in the
+  EBS
+  snapshots archive. <br />
 
 
   </div>
@@ -800,34 +809,40 @@ Multivalue Answer Routing Policy</p>
     <button
         onclick="toggleContent(this)"
         data-label-show="Explanation"
-    data-label-hide="Explanation"
+    data-label-hide="Hide"
     >
     Explanation
     </button>
   </p>
   <div class="toggle-content" style="display: none;">
     
-Correct Answer: C </br>
+Correct Answer: C <br />
 
-- Option A is incorrect. A Weighted Routing Policy is used when you have a requirement to specify the
-percentages of traffic to be routed to the underlying servers. For example, 10% traffic to Test
-Server A, 10% Traffic to Test Server B, and 80% Traffic to the Production server. </br>
-- Option B is incorrect. If the requirement was to route the user request based on the location of the
-users as well as the servers, then you could use the Geoproximity routing policy. For example, you
-may want the user’s request should be routed to the resources present at the least distance from the
-user. Also, in this policy, You can optionally choose to route more traffic or less to a given
-resource by specifying a value, known as a bias. A bias will let you shrink or expand the size of a
-geographic region from which traffic is routed to a resource. So let’s say there are 4 or 5 cities
-whose traffic you want to route to resources in 1 region and then another few cities whose requests
-you want to be routed to the resources in 2nd region. </br>
+- Option A is incorrect. A Weighted Routing Policy is used when you have a requirement to specify
+  the
+  percentages of traffic to be routed to the underlying servers. For example, 10% traffic to Test
+  Server A, 10% Traffic to Test Server B, and 80% Traffic to the Production server. <br />
+- Option B is incorrect. If the requirement was to route the user request based on the location of
+  the
+  users as well as the servers, then you could use the Geoproximity routing policy. For example, you
+  may want the user’s request should be routed to the resources present at the least distance from
+  the
+  user. Also, in this policy, You can optionally choose to route more traffic or less to a given
+  resource by specifying a value, known as a bias. A bias will let you shrink or expand the size of
+  a
+  geographic region from which traffic is routed to a resource. So let’s say there are 4 or 5 cities
+  whose traffic you want to route to resources in 1 region and then another few cities whose
+  requests
+  you want to be routed to the resources in 2nd region. <br />
 - Option C is CORRECT. In the Geolocation policy, though the resources might be present close to the
-user, the request wants to go to another resource which is quite far. This happens because we want
-the user’s request from a location to be routed to a specific server or set of servers only where
-the correctly translated website was hosted. </br>
+  user, the request wants to go to another resource which is quite far. This happens because we want
+  the user’s request from a location to be routed to a specific server or set of servers only where
+  the correctly translated website was hosted. <br />
 - Option D is incorrect. Multivalue answer routing is used when you want to route the DNS queries
-randomly to the underlying servers. It will consider up to 8 healthy servers, and the request will
-be routed to any of them randomly. In this question, the requirement is for routing the DNS queries
-to a specific server which is why this - Option Can be eliminated.
+  randomly to the underlying servers. It will consider up to 8 healthy servers, and the request will
+  be routed to any of them randomly. In this question, the requirement is for routing the DNS
+  queries
+  to a specific server which is why this - Option Can be eliminated.
 
 
   </div>
@@ -867,32 +882,34 @@ Adjust API Gateway Throttling settings to reduce the latency and number of calls
     <button
         onclick="toggleContent(this)"
         data-label-show="Explanation"
-    data-label-hide="Explanation"
+    data-label-hide="Hide"
     >
     Explanation
     </button>
   </p>
   <div class="toggle-content" style="display: none;">
     
-Correct Answer: C </br>
+Correct Answer: C <br />
 
 - Option A is incorrect. Cloudfront CDN caching is mainly used for caching the responses to limited
-HTTP requests. API Gateway can cache the responses to requests of any type. Also, configuring
-Cloudfront CDN would be an added effort. You have to select a solution with minimal effort.
-Therefore, this - Option Can be eliminated. </br>
+  HTTP requests. API Gateway can cache the responses to requests of any type. Also, configuring
+  Cloudfront CDN would be an added effort. You have to select a solution with minimal effort.
+  Therefore, this - Option Can be eliminated. <br />
 - Option B is incorrect because there is no feature like API Gateway QuickResponse. This option is
-just a distractor and thus, can be eliminated. </br>
-- Option C is CORRECT. When you enable caching on API Gateway, it caches the responses of the requests
-processed by the backend. When a similar request comes, it will serve it quickly from the API
-Gateway Cache itself instead of passing the call to the backend. This will reduce the number of
-calls made to the backend, eventually reducing the overall cost. Also, this will help in reducing
-the latency of the responses sent to the user. </br>
-<img src="/images/saa-c03-exam-practice-questions-part-1_img_2.png" alt="saa-c03-exam-practice-questions-part-1_img_2" loading="lazy"></br>
+  just a distractor and thus, can be eliminated. <br />
+- Option C is CORRECT. When you enable caching on API Gateway, it caches the responses of the
+  requests
+  processed by the backend. When a similar request comes, it will serve it quickly from the API
+  Gateway Cache itself instead of passing the call to the backend. This will reduce the number of
+  calls made to the backend, eventually reducing the overall cost. Also, this will help in reducing
+  the latency of the responses sent to the user. <br />
+  <img src="/images/saa-c03-exam-practice-questions-part-1_img_2.png" alt="saa-c03-exam-practice-questions-part-1_img_2" loading="lazy"><br />
 
-- Option D is incorrect. Throttling is used to limit the number of requests that can pass through API
-Gateway at a time. It is configured in API Gateway to protect your APIs from being overwhelmed by
-many requests at a time. This won’t satisfy the requirement of reducing the latency. Hence, this 
-option can be eliminated.</br>
+- Option D is incorrect. Throttling is used to limit the number of requests that can pass through
+  API
+  Gateway at a time. It is configured in API Gateway to protect your APIs from being overwhelmed by
+  many requests at a time. This won’t satisfy the requirement of reducing the latency. Hence, this
+  option can be eliminated.<br />
 
 
   </div>
@@ -930,25 +947,25 @@ Ensure that the Security group allows Outbound SSH traffic from the IT Administr
     <button
         onclick="toggleContent(this)"
         data-label-show="Explanation"
-    data-label-hide="Explanation"
+    data-label-hide="Hide"
     >
     Explanation
     </button>
   </p>
   <div class="toggle-content" style="display: none;">
     
-Correct Answer - C </br>
+Correct Answer - C <br />
 
 Since the IT administrator needs to be provided SSH access to the instance, the traffic would be
-inbound to the instance. </br>
+inbound to the instance. <br />
 Since Security groups are stateful, we do not have to configure outbound traffic. What enters the
-inbound traffic is allowed in the outbound traffic too. </br>
+inbound traffic is allowed in the outbound traffic too. <br />
 
 Options A and B are incorrect because the default network ACL is configured to allow all traffic to
-flow in and out of the subnets to which it is associated. </br>
+flow in and out of the subnets to which it is associated. <br />
 
 - Option D is incorrect because Security groups are stateful, we do not have to configure outbound
-traffic.
+  traffic.
 
 
   </div>
@@ -986,31 +1003,31 @@ The Security group of the instance disallows the egress traffic on port 80.</p>
     <button
         onclick="toggleContent(this)"
         data-label-show="Explanation"
-    data-label-hide="Explanation"
+    data-label-hide="Hide"
     >
     Explanation
     </button>
   </p>
   <div class="toggle-content" style="display: none;">
     
-Answer: B </br>
+Answer: B <br />
 
 - Option A is incorrect. An Elastic IP address is a public IPv4 address with which you can mask the
-failure of an instance or software by rapidly remapping the address to another instance in your
-account. </br>
-If your instance does not have a public IPv4 address, you can associate an Elastic IP address with
-your instance to enable communication with the internet; for example, to connect to your instance
-from your local computer. </br>
+  failure of an instance or software by rapidly remapping the address to another instance in your
+  account. <br />
+  If your instance does not have a public IPv4 address, you can associate an Elastic IP address with
+  your instance to enable communication with the internet; for example, to connect to your instance
+  from your local computer. <br />
 
 From our problem statement, EC2 is launched with Auto-assign public IP enabled. So, since public IP
-is available, Elastic IP is not necessary to connect from the internet. </br>
+is available, Elastic IP is not necessary to connect from the internet. <br />
 
 - Option C is incorrect because the problem statement clearly states that EC2 is launched with
-Auto-assign Public IP enabled, so this - Option Cannot be true. </br>
+  Auto-assign Public IP enabled, so this - Option Cannot be true. <br />
 - Option B is CORRECT as the NCL may not allow the ingress SSH traffic so the connection failed to
-connect. </br>
+  connect. <br />
 - Option D is incorrect because SSH uses port 22. A security group is stateful and in this scenario,
-the security group may disallow the ingress SSH traffic instead of egress.
+  the security group may disallow the ingress SSH traffic instead of egress.
 
 
   </div>
@@ -1047,29 +1064,31 @@ Using CloudFront origin with signed cookies.</p>
     <button
         onclick="toggleContent(this)"
         data-label-show="Explanation"
-    data-label-hide="Explanation"
+    data-label-hide="Hide"
     >
     Explanation
     </button>
   </p>
   <div class="toggle-content" style="display: none;">
     
-Correct Answer: D </br>
+Correct Answer: D <br />
 
-- Option A is incorrect. Bucket policies are mainly used with resources in AWS. They are not intended
-to restrict content to application users. More details:
-https://docs.aws.amazon.com/AmazonS3/latest/dev/access-policy-language-overview.html </br>
-- Option B is incorrect. This option only encrypts the communication between users and CloudFront. It
-does not restrict access to files. More details:
-https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-https.html </br>
+- Option A is incorrect. Bucket policies are mainly used with resources in AWS. They are not
+  intended
+  to restrict content to application users. More details:
+  <a target="_blank" href="https://docs.aws.amazon.com/AmazonS3/latest/dev/access-policy-language-overview.html">https://docs.aws.amazon.com/AmazonS3/latest/dev/access-policy-language-overview.html</a> <br />
+- Option B is incorrect. This option only encrypts the communication between users and CloudFront.
+  It
+  does not restrict access to files. More details:
+  <a target="_blank" href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-https.html">https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-https.html</a> <br />
 - Option C is incorrect. With a signed URL, you only restrict access to one file. If you implement
-this, the application would have to generate a new pre-signed URL for every file in the premium
-section and give this new link to the user. More details:
-https://docs.amazonaws.cn/en_us/AmazonCloudFront/latest/DeveloperGuide/private-content-signed-urls.html </br>
+  this, the application would have to generate a new pre-signed URL for every file in the premium
+  section and give this new link to the user. More details:
+  <a target="_blank" href="https://docs.amazonaws.cn/en_us/AmazonCloudFront/latest/DeveloperGuide/private-content-signed-urls.html">https://docs.amazonaws.cn/en_us/AmazonCloudFront/latest/DeveloperGuide/private-content-signed-urls.html</a> <br />
 - Option D is CORRECT. Once your application allows your user to see this section, it will give a
-cookie to the user. Then CloudFront will use this cookie to access S3 restricted content. More
-details:
-https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-signed-cookies.html </br>
+  cookie to the user. Then CloudFront will use this cookie to access S3 restricted content. More
+  details:
+  <a target="_blank" href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-signed-cookies.html">https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-signed-cookies.html</a> <br />
 
 
   </div>
@@ -1105,20 +1124,21 @@ Use Auto Scaling groups to scale the NAT Gateways.</p>
     <button
         onclick="toggleContent(this)"
         data-label-show="Explanation"
-    data-label-hide="Explanation"
+    data-label-hide="Hide"
     >
     Explanation
     </button>
   </p>
   <div class="toggle-content" style="display: none;">
     
-Correct Answer - B </br>
+Correct Answer - B <br />
 
-- Option A is incorrect because you cannot create such configurations. </br>
+- Option A is incorrect because you cannot create such configurations. <br />
 - Option B is CORRECT because this is recommended by AWS. With this option, if a NAT gateway’s
-Availability Zone is down, resources in other Availability Zones can still access internet. </br>
-- Option C is incorrect because the EC2 instances are in one AWS region so there is no need to create
-a NAT Gateway in another region. </br>
+  Availability Zone is down, resources in other Availability Zones can still access internet. <br />
+- Option C is incorrect because the EC2 instances are in one AWS region so there is no need to
+  create
+  a NAT Gateway in another region. <br />
 - Option D is incorrect because you cannot create an Auto Scaling group for NAT Gateways.
 
 
@@ -1155,22 +1175,23 @@ Use Cognito Identity along with a User Pool to securely save users’ profile at
     <button
         onclick="toggleContent(this)"
         data-label-show="Explanation"
-    data-label-hide="Explanation"
+    data-label-hide="Hide"
     >
     Explanation
     </button>
   </p>
   <div class="toggle-content" style="display: none;">
     
-Correct Answer: D </br>
+Correct Answer: D <br />
 
 - Option A is incorrect. It is improper to assign an IAM role for each end-user. IAM role is not a
-directory service. </br>
-- Option B is incorrect. AWS account cannot be configured as a directory service. </br>
+  directory service. <br />
+- Option B is incorrect. AWS account cannot be configured as a directory service. <br />
 - Option C is incorrect. This isn’t the most efficient means to authenticate and save user
-information. </br>
-- Option D is correct. Cognito is a managed service that can be used for this app and scale quickly as
-usage grows.
+  information. <br />
+- Option D is correct. Cognito is a managed service that can be used for this app and scale quickly
+  as
+  usage grows.
 
 
   </div>
@@ -1211,32 +1232,34 @@ Amazon Textract</p>
     <button
         onclick="toggleContent(this)"
         data-label-show="Explanation"
-    data-label-hide="Explanation"
+    data-label-hide="Hide"
     >
     Explanation
     </button>
   </p>
   <div class="toggle-content" style="display: none;">
     
-Correct Answers: A and D </br>
+Correct Answers: A and D <br />
 
 Amazon Polly can be used to generate natural-sounding speech, which can be used for automated
 customer service calls, IVR systems, or to read out text-based information to visually impaired
-customers. </br>
+customers. <br />
 
 Amazon Lex can be used to build conversational interfaces, such as chatbots and voice assistants.
 These can be used to answer customer queries, provide product information, or help with
-account-related tasks. </br>
+account-related tasks. <br />
 
-- Option B is incorrect. Amazon Fraud Detector s used to detect fraudulent activities, such as credit
-card fraud or identity theft. While it can be used to protect the financial institution, it is not
-directly related to enhancing customer service. </br>
+- Option B is incorrect. Amazon Fraud Detector s used to detect fraudulent activities, such as
+  credit
+  card fraud or identity theft. While it can be used to protect the financial institution, it is not
+  directly related to enhancing customer service. <br />
 - Option C is incorrect. Amazon Kendra is used used to find information within a company's internal
-knowledge base. While it can be used to improve customer service by providing accurate and
-up-to-date information, it is not directly related to automating customer interactions or providing
-a personalized experience. </br>
+  knowledge base. While it can be used to improve customer service by providing accurate and
+  up-to-date information, it is not directly related to automating customer interactions or
+  providing
+  a personalized experience. <br />
 - Option E is incorrect. Amazon Textract is used to extract text and data from scanned documents. It
-is not designed to predict future trends or build chatbots.
+  is not designed to predict future trends or build chatbots.
 
 
   </div>
@@ -1274,24 +1297,26 @@ Replicate the existing configuration in several regions for failover.</p>
     <button
         onclick="toggleContent(this)"
         data-label-show="Explanation"
-    data-label-hide="Explanation"
+    data-label-hide="Hide"
     >
     Explanation
     </button>
   </p>
   <div class="toggle-content" style="display: none;">
     
-Correct Answer: C </br>
+Correct Answer: C <br />
 
-- Option C is correct. Using the elastic load balancer to perform health checks will determine whether
-or not to remove a non-performing or underperforming instance, and have the auto-scaling group
-launch a new instance. </br>
+- Option C is correct. Using the elastic load balancer to perform health checks will determine
+  whether
+  or not to remove a non-performing or underperforming instance, and have the auto-scaling group
+  launch a new instance. <br />
 - Option A is incorrect. Increasing the instance size doesn’t prevent the failure of one or both
-instances. Therefore the website can still become slow or unavailable. </br>
+  instances. Therefore the website can still become slow or unavailable. <br />
 - Option B is incorrect. Monitoring the VPC flow logs for the VPC will capture the VPC traffic, not
-the traffic for the EC2 instance. You would need to create a flow log for a network interface. </br>
+  the traffic for the EC2 instance. You would need to create a flow log for a network
+  interface. <br />
 - Option D is incorrect. Replicating the same two instance deployment may not prevent instances of
-failure and could still result in the website becoming slow or unavailable.
+  failure and could still result in the website becoming slow or unavailable.
 
 
   </div>
@@ -1329,29 +1354,29 @@ Pass API credentials to the instance using instance user data</p>
     <button
         onclick="toggleContent(this)"
         data-label-show="Explanation"
-    data-label-hide="Explanation"
+    data-label-hide="Hide"
     >
     Explanation
     </button>
   </p>
   <div class="toggle-content" style="display: none;">
     
-Correct Answer – B </br>
+Correct Answer – B <br />
 
 We designed IAM roles so that your applications can securely make API requests from your instances,
 without requiring you to manage the security credentials that the applications use. Instead of
 creating and distributing your AWS credentials, you can delegate permission to make API requests
-using IAM roles as follows: </br>
+using IAM roles as follows: <br />
 
-Create an IAM role. </br>
+Create an IAM role. <br />
 
-Define which accounts or AWS services can assume the role. </br>
+Define which accounts or AWS services can assume the role. <br />
 
-Define which API actions and resources the application can use after assuming the role. </br>
+Define which API actions and resources the application can use after assuming the role. <br />
 
-Specify the role when you launch your instance or attach the role to an existing instance. </br>
+Specify the role when you launch your instance or attach the role to an existing instance. <br />
 
-Have the application retrieve a set of temporary credentials and use them. </br>
+Have the application retrieve a set of temporary credentials and use them. <br />
 
 
   </div>
@@ -1388,26 +1413,27 @@ Configure a secure enterprise storage through Amazon WorkDocs.</p>
     <button
         onclick="toggleContent(this)"
         data-label-show="Explanation"
-    data-label-hide="Explanation"
+    data-label-hide="Hide"
     >
     Explanation
     </button>
   </p>
   <div class="toggle-content" style="display: none;">
     
-Correct Answer– C </br>
+Correct Answer– C <br />
 
 In this question, a Windows file server is required in AWS, and the application should continue to
 work unchanged. Amazon FSx for Windows File Server is the correct answer as it is backed by a fully
-native Windows file system. </br>
+native Windows file system. <br />
 
 - Option A is incorrect because Amazon WorkSpace configures a desktop server which is not
-required in this question. Only a Windows file server is needed. </br>
-- Option B is incorrect because EFS cannot be used to configure a Windows file server. </br>
+  required in this question. Only a Windows file server is needed. <br />
+- Option B is incorrect because EFS cannot be used to configure a Windows file server. <br />
 - Option C is CORRECT because Amazon FSx provides fully managed Microsoft Windows file servers.
-Check the reference in https://docs.aws.amazon.com/fsx/latest/WindowsGuide/what-is.html. </br>
+  Check the reference
+  in <a target="_blank" href="https://docs.aws.amazon.com/fsx/latest/WindowsGuide/what-is.html">https://docs.aws.amazon.com/fsx/latest/WindowsGuide/what-is.html</a>. <br />
 - Option D is incorrect because Amazon WorkDocs is a file-sharing service in AWS. It cannot
-provide a native Windows file system.
+  provide a native Windows file system.
 
 
   </div>
@@ -1444,28 +1470,28 @@ Scheduled scaling policy.</p>
     <button
         onclick="toggleContent(this)"
         data-label-show="Explanation"
-    data-label-hide="Explanation"
+    data-label-hide="Hide"
     >
     Explanation
     </button>
   </p>
   <div class="toggle-content" style="display: none;">
     
-Correct Answer – A </br>
+Correct Answer – A <br />
 
 In ASG, you can add a target tracking scaling policy based on a target. For different scaling
 policies, please
-check https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scale-based-on-demand.html </br>
+check <a target="_blank" href="https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scale-based-on-demand.html">https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scale-based-on-demand.html</a> <br />
 
 - Option A is CORRECT: Because a target tracking scaling policy can be applied to check the
-ASGAverageCPUUtilization metric according
-to https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-target-tracking.html. </br>
+  ASGAverageCPUUtilization metric according
+  to <a target="_blank" href="https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-target-tracking.html">https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-target-tracking.html</a>. <br />
 - Option B is incorrect: Because Step scaling adjusts the capacity based on step adjustments instead
-of a target. </br>
+  of a target. <br />
 - Option C is incorrect: Because Simple scaling changes the capacity based on a single
-adjustment. </br>
+  adjustment. <br />
 - Option D is incorrect: With Scheduled scaling, the capacity is adjusted based on a schedule rather
-than a target. </br>
+  than a target. <br />
 
 
   </div>
@@ -1502,35 +1528,39 @@ Amazon DynamoDB</p>
     <button
         onclick="toggleContent(this)"
         data-label-show="Explanation"
-    data-label-hide="Explanation"
+    data-label-hide="Hide"
     >
     Explanation
     </button>
   </p>
   <div class="toggle-content" style="display: none;">
     
-Correct Answer: B </br>
+Correct Answer: B <br />
 
 Amazon Quantum Ledger Database (Amazon QLDB) is the most suitable option for the logistics company's
-requirements: </br>
+requirements: <br />
 
 Immutable Transaction History: QLDB provides a fully managed, serverless, and scalable ledger
 database service designed specifically to maintain a complete and verifiable history of all changes
-to application data. </br>
+to application data. <br />
 Real-time Visibility into Data Changes: QLDB allows for real-time visibility into data changes with
-its ability to provide an immutable history of all transactions. </br>
-- Option A is incorrect because Amazon Neptune is a fully managed graph database service designed for
-storing and querying highly connected data, such as social networks or recommendation engines. It
-does not provide the built-in features necessary for maintaining an immutable transaction
-history </br>
+its ability to provide an immutable history of all transactions. <br />
+
+- Option A is incorrect because Amazon Neptune is a fully managed graph database service designed
+  for
+  storing and querying highly connected data, such as social networks or recommendation engines. It
+  does not provide the built-in features necessary for maintaining an immutable transaction
+  history <br />
 - Option C is incorrect because Amazon ElastiCache is a fully managed in-memory caching service that
-provides high-performance, scalable caching solutions. However, it is not designed to maintain
-immutable transaction history or provide real-time visibility into data changes. </br>
-- Option D is incorrect because Amazon DynamoDB is a fully managed NoSQL database service designed for
-high-performance, low-latency applications. It does not provide built-in features for maintaining
-immutable transaction history or real-time visibility into data changes. While DynamoDB Streams can
-capture changes to data, it does not offer the same level of immutability and verifiability as
-Amazon QLDB.
+  provides high-performance, scalable caching solutions. However, it is not designed to maintain
+  immutable transaction history or provide real-time visibility into data changes. <br />
+- Option D is incorrect because Amazon DynamoDB is a fully managed NoSQL database service designed
+  for
+  high-performance, low-latency applications. It does not provide built-in features for maintaining
+  immutable transaction history or real-time visibility into data changes. While DynamoDB Streams
+  can
+  capture changes to data, it does not offer the same level of immutability and verifiability as
+  Amazon QLDB.
 
 
   </div>
@@ -1566,21 +1596,21 @@ You need to disable the server-side encryption in S3 before creating the Athena 
     <button
         onclick="toggleContent(this)"
         data-label-show="Explanation"
-    data-label-hide="Explanation"
+    data-label-hide="Hide"
     >
     Explanation
     </button>
   </p>
   <div class="toggle-content" style="display: none;">
     
-Correct Answer – B </br>
+Correct Answer – B <br />
 
 - Option A is incorrect because, for SS3-KMS, Athena can determine the proper materials to
-decrypt the dataset when creating the table. You do not need to provide the key information to
-Athena. </br>
+  decrypt the dataset when creating the table. You do not need to provide the key information to
+  Athena. <br />
 - Option B is CORRECT because Athena can create the table for the S3 data encrypted by SSE-KMS.
-Options C and D are incorrect because these steps are not required. Athena can create tables for
-the dataset encrypted by SSE-KMS. </br>
+  Options C and D are incorrect because these steps are not required. Athena can create tables for
+  the dataset encrypted by SSE-KMS. <br />
 
 
   </div>
@@ -1617,25 +1647,29 @@ AWS Step Functions</p>
     <button
         onclick="toggleContent(this)"
         data-label-show="Explanation"
-    data-label-hide="Explanation"
+    data-label-hide="Hide"
     >
     Explanation
     </button>
   </p>
   <div class="toggle-content" style="display: none;">
     
-Correct Answer – B </br>
+Correct Answer – B <br />
 
 AWS SNS can push notifications to the related SQS endpoints. SNS uses a publish/subscribe model that
-provides instant event notifications for applications. </br>
+provides instant event notifications for applications. <br />
 
-- Option A is incorrect: Amazon MQ is a managed message broker service, which is not suitable for this
-scenario. </br>
-- Option B is CORRECT: Because SNS uses Pub/Sub messaging to provide asynchronous event notifications.
-Please check the link-https://aws.amazon.com/pub-sub-messaging/. </br>
-- Option C is incorrect: Because SQS does not use the publish/subscribe model. </br>
-- Option D is incorrect: AWS Step Functions coordinate application components using visual workflows.
-The service should not be used in this scenario. </br>
+- Option A is incorrect: Amazon MQ is a managed message broker service, which is not suitable for
+  this
+  scenario. <br />
+- Option B is CORRECT: Because SNS uses Pub/Sub messaging to provide asynchronous event
+  notifications.
+  Please check the
+  link-<a target="_blank" href="https://aws.amazon.com/pub-sub-messaging/">https://aws.amazon.com/pub-sub-messaging/</a>. <br />
+- Option C is incorrect: Because SQS does not use the publish/subscribe model. <br />
+- Option D is incorrect: AWS Step Functions coordinate application components using visual
+  workflows.
+  The service should not be used in this scenario. <br />
 
 
   </div>
@@ -1670,25 +1704,25 @@ AWS IAM</p>
     <button
         onclick="toggleContent(this)"
         data-label-show="Explanation"
-    data-label-hide="Explanation"
+    data-label-hide="Hide"
     >
     Explanation
     </button>
   </p>
   <div class="toggle-content" style="display: none;">
     
-Correct Answer - C </br>
+Correct Answer - C <br />
 
-AWS Documentation mentions the following. </br>
+AWS Documentation mentions the following. <br />
 
-With AWS Config, you can do the following. </br>
+With AWS Config, you can do the following. <br />
 
-Evaluate your AWS resource configurations for desired settings. </br>
+Evaluate your AWS resource configurations for desired settings. <br />
 Get a snapshot of the current configurations of the supported resources that are associated with
-your AWS account. </br>
-Retrieve configurations of one or more resources that exist in your account. </br>
-Retrieve historical configurations of one or more resources. </br>
-Receive a notification whenever a resource is created, modified or deleted. </br>
+your AWS account. <br />
+Retrieve configurations of one or more resources that exist in your account. <br />
+Retrieve historical configurations of one or more resources. <br />
+Receive a notification whenever a resource is created, modified or deleted. <br />
 View relationships between resources. For example, you might want to find all resources that use a
 particular security group.
 
@@ -1741,7 +1775,7 @@ particular security group.
         		<footer>
 			
 			<span>
-			&copy; <time datetime="2025-05-15 08:25:24.727176 &#43;0700 &#43;07 m=&#43;0.093608585">2025</time> Đoàn Hải. 
+			&copy; <time datetime="2025-05-15 18:49:11.7005 &#43;0700 &#43;07 m=&#43;0.117525959">2025</time> Đoàn Hải. 
 			</span>
 		</footer>
 

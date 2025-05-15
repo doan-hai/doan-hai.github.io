@@ -6,7 +6,20 @@
     <description>Recent content on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Mar 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://doanhai.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Mar 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://doanhai.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>400&#43; Câu hỏi luyện thi chứng chỉ AWS Certified Solutions Architect Associate (SAA-C03) - Phần 3</title>
+      <link>https://doanhai.dev/certificate/aws-certified-solutions-architect-associate-saa-c03-exam-practice-questions-part-3/</link>
+      <pubDate>Sat, 25 Mar 2023 00:00:00 +0700</pubDate>
+      
+      <guid>https://doanhai.dev/certificate/aws-certified-solutions-architect-associate-saa-c03-exam-practice-questions-part-3/</guid>
+      <description>Question 1 A global beverage company is using AWS cloud infrastructure for hosting its web application. For a new beverage, the company plans to use a unique voice using Amazon Polly to help market this product to a wide range of customers.
+Which feature can be used with Amazon Polly for this purpose?
+A. Create custom Lexicons with Amazon Polly
+B. Use a custom SSML tag with Amazon Polly
+C. Build a Brand Voice using Amazon Polly</description>
+    </item>
+    
     <item>
       <title>400&#43; Câu hỏi luyện thi chứng chỉ AWS Certified Solutions Architect Associate (SAA-C03) - Phần 2</title>
       <link>https://doanhai.dev/certificate/aws-certified-solutions-architect-associate-saa-c03-exam-practice-questions-part-2/</link>
