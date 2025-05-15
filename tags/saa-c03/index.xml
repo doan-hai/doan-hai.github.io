@@ -6,7 +6,16 @@
     <description>Recent content in saa c03 on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Mar 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://doanhai.dev/tags/saa-c03/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Mar 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://doanhai.dev/tags/saa-c03/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>400&#43; Câu hỏi luyện thi chứng chỉ AWS Certified Solutions Architect Associate (SAA-C03) - Phần 4</title>
+      <link>https://doanhai.dev/certificate/aws-certified-solutions-architect-associate-saa-c03-exam-practice-questions-part-4/</link>
+      <pubDate>Sun, 26 Mar 2023 00:00:00 +0700</pubDate>
+      
+      <guid>https://doanhai.dev/certificate/aws-certified-solutions-architect-associate-saa-c03-exam-practice-questions-part-4/</guid>
+      <description>Question 1 A start-up firm has created a cloud storage application that gives users the ability to store any amount of personal data &amp;amp; share them with their connections. For this, they are using Amazon S3 buckets to store user data. The firm has used Amazon S3 multipart upload to upload large objects in parts. During the last quarter, the finance team has observed a surge in storage costs for the S3 bucket.</description>
+    </item>
+    
     <item>
       <title>400&#43; Câu hỏi luyện thi chứng chỉ AWS Certified Solutions Architect Associate (SAA-C03) - Phần 3</title>
       <link>https://doanhai.dev/certificate/aws-certified-solutions-architect-associate-saa-c03-exam-practice-questions-part-3/</link>
