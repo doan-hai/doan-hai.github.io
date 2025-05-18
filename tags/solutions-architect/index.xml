@@ -6,7 +6,18 @@
     <description>Recent content in solutions architect on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Mar 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://doanhai.dev/tags/solutions-architect/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Mar 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://doanhai.dev/tags/solutions-architect/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>400&#43; Câu hỏi luyện thi chứng chỉ AWS Certified Solutions Architect Associate (SAA-C03) - Phần 6</title>
+      <link>https://doanhai.dev/certificate/aws-certified-solutions-architect-associate-saa-c03-exam-practice-questions-part-6/</link>
+      <pubDate>Tue, 28 Mar 2023 00:00:00 +0700</pubDate>
+      
+      <guid>https://doanhai.dev/certificate/aws-certified-solutions-architect-associate-saa-c03-exam-practice-questions-part-6/</guid>
+      <description>Question 1 A manufacturing firm has a large number of smart devices installed in various locations worldwide. Hourly logs from these devices are stored in an Amazon S3 bucket. Management is looking for comprehensive dashboards which should incorporate usages of these devices and forecast usage trends for these devices.
+Which tool is the best suited to get this required dashboard?
+A. Use S3 as a source for Amazon QuickSight and create dashboards for usage and forecast trends</description>
+    </item>
+    
     <item>
       <title>400&#43; Câu hỏi luyện thi chứng chỉ AWS Certified Solutions Architect Associate (SAA-C03) - Phần 5</title>
       <link>https://doanhai.dev/certificate/aws-certified-solutions-architect-associate-saa-c03-exam-practice-questions-part-5/</link>
