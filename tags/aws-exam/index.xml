@@ -6,7 +6,16 @@
     <description>Recent content in aws exam on Home</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Mar 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://doanhai.dev/tags/aws-exam/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Mar 2023 00:00:00 +0700</lastBuildDate><atom:link href="https://doanhai.dev/tags/aws-exam/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>400&#43; Câu hỏi luyện thi chứng chỉ AWS Certified Solutions Architect Associate (SAA-C03) - Phần 7</title>
+      <link>https://doanhai.dev/certificate/aws-certified-solutions-architect-associate-saa-c03-exam-practice-questions-part-7/</link>
+      <pubDate>Wed, 29 Mar 2023 00:00:00 +0700</pubDate>
+      
+      <guid>https://doanhai.dev/certificate/aws-certified-solutions-architect-associate-saa-c03-exam-practice-questions-part-7/</guid>
+      <description>Question 1 You work as an architect for a consulting company. The consulting company normally creates the same set of resources for their clients. They want some way of building templates, which can then be used to deploy the resources to the AWS accounts for the various clients. Also, your team needs to be ensured that they have control over the infrastructure. Which of the following service can help fulfill this requirement?</description>
+    </item>
+    
     <item>
       <title>400&#43; Câu hỏi luyện thi chứng chỉ AWS Certified Solutions Architect Associate (SAA-C03) - Phần 6</title>
       <link>https://doanhai.dev/certificate/aws-certified-solutions-architect-associate-saa-c03-exam-practice-questions-part-6/</link>
